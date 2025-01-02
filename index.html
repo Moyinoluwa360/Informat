@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informat - Stay Informed</title>
+  <style>
+    /* General Reset */
+    body, h1, h2, h3, p, ul, li, a, img {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header Styling */
+    .header {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 15px 0;
+    }
+    .header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .header .nav ul {
+      display: flex;
+      list-style: none;
+    }
+    .header .nav ul li {
+      margin-left: 20px;
+    }
+    .header .nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s;
+    }
+    .header .nav ul li a:hover {
+      color: #FFD700;
+    }
+
+    /* Featured News Section */
+    .featured-news {
+      background-color: #fff;
+      padding: 20px 0;
+    }
+    .featured-news .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .featured-article img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .featured-article h2 {
+      font-size: 28px;
+      margin: 15px 0;
+    }
+    .featured-article p {
+      margin-bottom: 10px;
+    }
+    .featured-article .read-more {
+      display: inline-block;
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .featured-article .read-more:hover {
+      background-color: #0056b3;
+    }
+
+    /* News Categories Section */
+    .news-categories {
+      padding: 20px 0;
+    }
+    .news-categories .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .news-categories h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .category {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .category img {
+      width: 100%;
+    }
+    .category h3 {
+      font-size: 20px;
+      margin: 15px;
+    }
+    .category p {
+      margin: 0 15px 15px;
+    }
+    .category .read-more {
+      display: block;
+      margin: 15px;
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .category .read-more:hover {
+      color: #0056b3;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .footer a {
+      color: #FFD700;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Informat</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">World</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#">Entertainment</a></li>
+          <li><a href="#">Health</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Featured News Section -->
+  <section class="featured-news">
+    <div class="container">
+      <div class="featured-article">
+        <img src="./assets/ai.jpeg" alt="Featured News">
+        <h2>Breaking News: Major Breakthrough in Artificial Intelligence</h2>
+        <p>Researchers have unveiled a revolutionary AI model that could change the future of technology...</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Categories -->
+  <section class="news-categories">
+    <div class="container">
+      <h2>Latest Articles</h2>
+      <div class="category-grid">
+        <div class="category">
+          <img src="./assets/world.jpeg" alt="World News">
+          <h3>World</h3>
+          <p>Global leaders gather for the climate summit to address critical environmental challenges.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="category">
+          <img src="./assets/tech.jpeg" alt="Tech News">
+          <h3>Technology</h3>
+          <p>Explore the latest innovations in tech, from quantum computing to space exploration.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="category">
+          <img src="./assets/sports.jpeg" alt="Sports News">
+          <h3>Sports</h3>
+          <p>Catch up on thrilling sports action, from soccer to the latest F1 races.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="category">
+          <img src="./assets/entertain.jpeg" alt="Entertainment News">
+          <h3>Entertainment</h3>
+          <p>Discover the latest movies, music, and celebrity news trending globally.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Informat. All Rights Reserved.</p>
+      <p>Follow us on: 
+        <a href="#">Facebook</a> | 
+        <a href="#">Twitter</a> | 
+        <a href="#">Instagram</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
